@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --cor1: #f1f3f7;
+    --cor2: #f6f6f6;
+    --cor3: #a89f9f;
+    --cor4: #233032;
+    --cor5: #23303E;
+    --cor6: #2f86d6;
+}
+p {
+    font-size: 10px;
+}
+h2 {
+    font-size: 0.7em;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins";
+}
+
+img.peq {
+    width: 90px;
+}
+
+div.logo {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.logo-imagem {
+    width: 80px;
+    height: 80px;
+}
+
+div.logo-imagem > img {
+    height: 100%;
+    width: 100%;
+}
+
+div.logo > div > h1 {
+    margin: 0px;
+}
+
+div.logo > div > p {
+    margin: 0px;
+    font-size: 13px;
+    color: var(--cor6)
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-links {
+    width: 385px;
+    flex-flow: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-links > a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div.banner {
+    padding: 10px 20px;
+    margin: 0px auto;
+    background-color: var(--cor6);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.imgbanner > img {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 250px;
+}
+
+div.txtbanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+}
+
+div.anuncio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    background-color: var(--cor5);
+    gap: 10px;
+}
+.txtanuncio {
+    max-width: 350px;
+}
+
+div.anuncio > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--cor6);
+    width: 200px;
+    padding: 15px ;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+div.anuncio2 {
+    background-color: var(--cor6);
+}
+div.anuncio2 > a{
+    background-color: var(--cor5);
+}
+a > img {
+    margin-right: 5px;
+}
+
+div.info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+div.infocard {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+div.info > h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin:auto;
+}
+span {
+    color: var(--cor6);
+}
+
+div.tabela {
+    padding: 10px;
+    background-color: var(--cor1);
+}
+div.tabela h3 {
+    text-align: center;
+    font-size: 1em;
+}
+.areatabela { 
+    display: flex;
+    margin: auto;
+    max-width: 500px;
+}
+table {
+    width: 100%;
+    flex-direction: column;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px 2px var(--cor6);
+    font-size: 10px;
+}
+td, th {
+    padding: 5px;
+    border: 1px solid gray;
+}
+.imgtab {
+    width: 50px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(228, 228, 228);
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+
+footer > p, .rodape > p{
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer > div.logo {
+    margin: 50px auto;
+}
+
+.rodape {
+    background-color: rgb(212, 212, 212);
+    padding: 1px;
+}
+span > a {
+    text-decoration: none;
+    color: var(--cor6);
+}
+span > a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px){
+    div.imgbanner {
+        display: none;
+    }
+
+    th > img, th > p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 540px){
+    div.banner {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    div.anuncio {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .secaocards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .areatabela {
+        max-width: 800px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    h2, h3 {
+        font-size: 1.4em;
+    }
+    p, footer > p , .rodape > p{
+        font-size: 15px;
+    }
+    .areatabela {
+        max-width: 900px;
+    }
+    .imgtab {
+        width: 100px;
+    }
+    td, th {
+        font-size: 20px;
+    }
+}
