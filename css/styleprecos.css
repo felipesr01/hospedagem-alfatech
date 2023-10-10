@@ -17,6 +17,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     font-family: "poppins";
+    overflow-x: hidden;
 }
 
 img.peq {
