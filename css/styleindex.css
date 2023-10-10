@@ -130,11 +130,18 @@ div.anuncio > a {
     text-decoration: none;
     border-radius: 5px;
 }
+
+div.anuncio > a:hover {
+    background-color: #2367a7;
+}
 div.anuncio2 {
     background-color: var(--cor6);
 }
 div.anuncio2 > a{
     background-color: var(--cor5);
+}
+div.anuncio2 > a:hover{
+    background-color: #131a22;
 }
 a > img {
     margin-right: 5px;
